@@ -1,5 +1,5 @@
 import View from './View.js';
-import { numberToFraction } from '../helpers.js';
+import  numberToFraction from '../helpers.js';
 import icons from 'url:../../img/icons.svg';
 // import {Fraction} from 'fractional';
 
@@ -39,7 +39,7 @@ class RecipeView extends View{
     _generateMarkup(){
         // console.log(this._data)
         return`<figure class="recipe__fig">
-          <img src="${this._data.image}" alt="${this._data.title}" class="recipe_img" crossorigin height="100%" width="100%"/>   
+          <img src="${this._data.image}" alt="${this._data.title}" class="recipe_img" crossorigin height="100%" width="auto" padding="50%"/>   
           <h1 class="recipe__title">
             <span>${this._data.title}</span>
           </h1>
